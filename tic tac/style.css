@@ -19,9 +19,44 @@ body{
 .board {
     padding: 20px;
     border-radius: 5px;
+    background-color: white;
+    display:block;
+}
+
+.row{
+    display: flex;
+}
+
+.bottom{
+    border-bottom: 10px solid rgb(180, 120, 162);
 }
 
 .box {
     position: relative;
+    height: 150px;
+    width:150px;
+    display: flex;
+    justify-content: center;
 }
 
+div.right {
+    border-right: 10px solid rgb(180, 120, 162);
+}
+
+img{
+    display:none;
+}
+
+.cross img.cross{
+    display:block;
+    padding:10px;
+    height: 150px;
+    width: 150px;
+}
+
+.round img.round{
+    display:block;
+    padding:10px;
+    height: 150px;
+    width: 150px;
+}

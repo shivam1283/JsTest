@@ -2,13 +2,58 @@
     <head>
         <script async src='./index.js'>
         </script>
-        <link rel='stylesheet' href='index.css'/>
+        <link rel='stylesheet' href='./style.css'/>
+        <link rel='stylesheet' href='../fontAwesome/style.css'/>
     </head>
 
     <body>
-        <div class="box">
+        <div class="board">
+
+            <div class="row bottom">
+                <div onClick='onClickTile(this)' id='11' class="box right">
+                    <img class="round" src="./assets/circle.svg"/>
+                    <img class="cross" src="./assets/cross.svg"/>
+                </div>
+                <div onClick='onClickTile(this)' id='12' class="box right ">
+                    <img class="round" src="./assets/circle.svg"/>
+                    <img class="cross" src="./assets/cross.svg"/>
+                </div>
+                <div onClick='onClickTile(this)' id='13' class="box ">
+                    <img class="round" src="./assets/circle.svg"/>
+                    <img class="cross" src="./assets/cross.svg"/>
+                </div>
+            </div>
+
+            <div class="row bottom">
+                <div onClick='onClickTile(this)' id='21' onClick='onClickTile()' class="box right">
+                    <img class="round" src="./assets/circle.svg"/>
+                    <img class="cross" src="./assets/cross.svg"/>
+                </div>
+                <div onClick='onClickTile(this)' id='22' class="box right">
+                    <img class="round" src="./assets/circle.svg"/>
+                    <img class="cross" src="./assets/cross.svg"/>
+                </div>
+                <div onClick='onClickTile(this)' id='23' class="box">
+                    <img class="round" src="./assets/circle.svg"/>
+                    <img class="cross" src="./assets/cross.svg"/>
+                </div>
+            </div>
             
+            <div class="row">
+                <div onClick='onClickTile(this)' id='31' class="box right">
+                    <img class="round" src="./assets/circle.svg"/>
+                    <img class="cross" src="./assets/cross.svg"/>
+                </div>
+                <div onClick='onClickTile(this)' id='32' class="box right">
+                    <img class="round" src="./assets/circle.svg"/>
+                    <img class="cross" src="./assets/cross.svg"/>
+                </div>
+                <div onClick='onClickTile(this)' id='33' class="box">
+                    <img class="round" src="./assets/circle.svg"/>
+                    <img class="cross" src="./assets/cross.svg"/>
+                </div>
+            </div>
+
         </div>
     </body>
-
 </html>
