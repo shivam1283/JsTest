@@ -1,0 +1,26 @@
+<script>
+    var x = 1
+    function makeRequest(url){
+        if (x > 10000)
+            return
+        let xhr = new XMLHttpRequest();
+        xhr.open('POST',url, true);
+
+        xhr.setRequestHeader('Content-Type', 'application/json');
+        const data = {
+            "phone":"9999999999",
+            "action":"REGISTER",
+            'business': true,
+            otp: '111111'
+        }
+        xhr.send(JSON.stringify(data));
+        x++
+        //window.location.reload()
+        setTimeout(() => makeRequest(url),1000)
+    }
+    makeRequest('https://stgapi.getvital.in/phone/verify_otp/')
+</script>
+
+<body>
+    <!-- <iframe src="https://www.wonderandwanderwomen.com/post/dhanushkodi-travel-blog" title="description"></iframe> -->
+</body>
